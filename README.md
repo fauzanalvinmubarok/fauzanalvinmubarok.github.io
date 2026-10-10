@@ -4,31 +4,26 @@ Portofolio React + Vite dengan galeri 11 project, filter kategori, pengalaman, p
 
 ## Website
 
-- Portofolio versi baru: https://corvex-byte-project-demos.ojanalvin11121.chatgpt.site/portfolio/
-- Koleksi sembilan demo CORVEX BYTE: https://corvex-byte-project-demos.ojanalvin11121.chatgpt.site/
-- Alamat GitHub Pages lama: https://fauzanalvinmubarok.github.io/
-
-ZIP ini memperbarui source portofolio. Situs GitHub Pages lama baru berubah setelah file portofolio diperbarui pada repository yang sama.
+- Portofolio utama: https://fauzanalvinmubarok.github.io/
+- Sembilan demo CORVEX BYTE dapat dibuka langsung dari kartu project pada halaman portofolio.
 
 ## Project
 
-1. CORVEX Market — marketplace dengan pelanggan, penjual, dan admin.
-2. Sistem Kearsipan Buku Tanah — ATR/BPN Kabupaten Pangandaran.
-3. Smart Secure QR Code — penelitian Universitas Siliwangi.
-4. Sudut Barber — booking barbershop.
-5. Ruang Temu — pemesanan tiket dan QR check-in.
-6. Sigap Layanan Rumah — pemesanan jasa.
-7. Meja Rasa — pemesanan restoran.
-8. Ruang Sela — café interaktif.
-9. Karakter Kopi — company profile café.
-10. Karsa Bangun — company profile kontraktor.
-11. Nusa Presisi — company profile manufaktur.
+1. CORVEX Market — https://contoh-ecommerce.fauzandemos.workers.dev/
+2. Sistem Kearsipan Buku Tanah — https://arsy-alpha.vercel.app/login
+3. Smart Secure QR Code — https://smart-secure-qrcode.netlify.app/
+4. Sudut Barber Studio — https://contoh-barbershop.fauzandemos.workers.dev/
+5. Ruang Temu — https://contoh-tiket.fauzandemos.workers.dev/
+6. Sigap Layanan Rumah — https://contoh-jasa.fauzandemos.workers.dev/
+7. Meja Rasa — https://contoh-restoran.fauzandemos.workers.dev/
+8. Ruang Sela — https://contohcafeinteraktif.netlify.app/
+9. Karakter Kopi — https://contohcafe.netlify.app/
+10. Karsa Bangun — https://contohkontraktor.netlify.app/
+11. Nusa Presisi — https://contohmanufaktur.netlify.app/
 
-Link kearsipan dan Smart QR tetap memakai alamat project sebelumnya. Sembilan demo baru di-host terpisah dengan repository source privat; ZIP portofolio tidak berisi source aplikasi-aplikasi tersebut, hanya metadata, gambar preview, dan URL.
+Sistem Kearsipan dan Smart Secure QR Code tetap memakai alamat project yang sudah tersedia sebelumnya. Sembilan demo CORVEX BYTE di-host terpisah melalui Netlify dan Cloudflare Workers; repository portofolio hanya menyimpan metadata, gambar preview, dan URL demo, bukan source aplikasi demo tersebut.
 
-Demo memakai logika aplikasi asli dengan SQLite yang berjalan lokal di browser. Akun, pesanan, stok, dan perubahan demo tersimpan di browser pengunjung; data tidak dibagikan antar perangkat. Panel “Demo interaktif” menyediakan akun admin, akun penjual bila tersedia, dan reset project. Transaksi, booking, serta pesan tidak dikirim ke bisnis sungguhan. Gateway pembayaran eksternal tidak dikonfigurasi; gunakan COD atau transfer demo dan verifikasi admin. Browser modern dengan JavaScript, WebAssembly, dan penyimpanan lokal diperlukan.
-
-Source privat menghindari pembukaan repository aplikasi. JavaScript, CSS, gambar, dan sertifikat yang dikirim ke browser tetap dapat diperiksa atau disalin. Tidak ada perlindungan mutlak terhadap penyalinan frontend.
+CORVEX Market mencakup alur checkout dan integrasi Midtrans Sandbox untuk demonstrasi pembayaran online. Jangan gunakan dana nyata pada environment testing/sandbox.
 
 ## Sertifikat
 
@@ -37,11 +32,11 @@ Source privat menghindari pembukaan repository aplikasi. JavaScript, CSS, gambar
 - Certified Threat Intelligence & Governance Analyst (CTIGA), Red Team Leaders, 6 Januari 2026.
 - Google Cloud Computing Foundations Certificate, Google Cloud, 6 Desember 2024.
 
-Dokumen asli ada di `public/certificates/`. Tanggal mengacu pada sertifikat yang diberikan. CV dan portfolio PDF yang sudah ada tetap disertakan.
+Dokumen asli ada di `public/certificates/`. CV dan portfolio PDF yang sudah ada tetap disertakan.
 
 ## Jalankan lokal
 
-Gunakan Node.js 22.12+ (atau 24+). Ekstrak ZIP, buka terminal pada folder yang memiliki `package.json`, lalu jalankan:
+Gunakan Node.js yang kompatibel dengan Vite 8. Ekstrak ZIP, buka terminal pada folder yang memiliki `package.json`, lalu jalankan:
 
 ```bash
 npm ci
@@ -54,16 +49,12 @@ Build produksi:
 npm run build
 ```
 
-Metadata project ada di `src/data.js`; tampilan di `src/App.jsx` dan `src/styles.css`. URL demo dapat diganti melalui `VITE_DEMO_BASE_URL` sebelum build (contoh di `.env.example`). Font DM Sans dan Fraunces disediakan lokal beserta lisensinya.
+Metadata dan URL project ada di `src/data.js`; tampilan di `src/App.jsx` dan `src/styles.css`.
 
 ## Memperbarui GitHub Pages
 
-Salin isi folder portofolio ini ke checkout repository `fauzanalvinmubarok.github.io`, termasuk `public/`, `src/`, `package.json`, `package-lock.json`, `index.html`, `vite.config.js`, dan workflow di `.github/`. Jalankan `npm ci` dan `npm run build` untuk memeriksa build, lalu commit dan push ke branch `main` repository yang sudah ada. Workflow GitHub Actions akan menerbitkan portofolio.
+Salin isi folder portofolio ini ke checkout repository `fauzanalvinmubarok.github.io`, termasuk `public/`, `src/`, `package.json`, `package-lock.json`, `index.html`, `vite.config.js`, dan `.github/`. Jalankan `npm ci` dan `npm run build` untuk memeriksa build, lalu commit dan push ke branch `main`. Workflow GitHub Actions akan menerbitkan portofolio.
 
-Source sembilan project demo tidak perlu diunggah ke repository GitHub Pages. URL demo sudah tertanam dalam data portofolio.
-
-Hosting demo menggunakan Sites dan kuota akun yang tersedia, tanpa membeli hosting atau domain tambahan. Ketersediaan dan kuota mengikuti ketentuan layanan; ini bukan jaminan hosting gratis selamanya.
-
-Build produksi dan alur API demo diperiksa secara otomatis. Tampilan di perangkat/browser nyata belum diuji pada sesi ini karena fasilitas browser QA tidak tersedia.
+Source sembilan project demo tidak perlu diunggah ke repository GitHub Pages karena URL deployment sudah tertanam langsung pada `src/data.js`.
 
 © 2026 Fauzan Alvin Mubarok
