@@ -1,204 +1,69 @@
 # Fauzan Alvin Mubarok — Portfolio
 
-Personal portfolio website of **Fauzan Alvin Mubarok**, an Informatics graduate with interests and experience in **Web Development, Software Development, and Information Security**.
+Portofolio React + Vite dengan galeri 11 project, filter kategori, pengalaman, pendidikan, empat sertifikat, dan navigasi responsif. Foto profil menggunakan foto asli tanpa kotak “Available for work”.
 
-The website presents my profile, technical skills, professional experience, selected projects, education, certifications, leadership experience, and contact information.
+## Website
 
-## Live Website
+- Portofolio versi baru: https://corvex-byte-project-demos.ojanalvin11121.chatgpt.site/portfolio/
+- Koleksi sembilan demo CORVEX BYTE: https://corvex-byte-project-demos.ojanalvin11121.chatgpt.site/
+- Alamat GitHub Pages lama: https://fauzanalvinmubarok.github.io/
 
-🌐 **[fauzanalvinmubarok.github.io](https://fauzanalvinmubarok.github.io/)**
+ZIP ini memperbarui source portofolio. Situs GitHub Pages lama baru berubah setelah file portofolio diperbarui pada repository yang sama.
 
----
+## Project
 
-## About Me
+1. CORVEX Market — marketplace dengan pelanggan, penjual, dan admin.
+2. Sistem Kearsipan Buku Tanah — ATR/BPN Kabupaten Pangandaran.
+3. Smart Secure QR Code — penelitian Universitas Siliwangi.
+4. Sudut Barber — booking barbershop.
+5. Ruang Temu — pemesanan tiket dan QR check-in.
+6. Sigap Layanan Rumah — pemesanan jasa.
+7. Meja Rasa — pemesanan restoran.
+8. Ruang Sela — café interaktif.
+9. Karakter Kopi — company profile café.
+10. Karsa Bangun — company profile kontraktor.
+11. Nusa Presisi — company profile manufaktur.
 
-I am an Informatics graduate from **Universitas Siliwangi** with experience in developing web-based applications, system analysis, documentation, research, and information security.
+Link kearsipan dan Smart QR tetap memakai alamat project sebelumnya. Sembilan demo baru di-host terpisah dengan repository source privat; ZIP portofolio tidak berisi source aplikasi-aplikasi tersebut, hanya metadata, gambar preview, dan URL.
 
-I enjoy learning new technologies, solving problems systematically, and building digital solutions that are useful and easy to use.
+Demo memakai logika aplikasi asli dengan SQLite yang berjalan lokal di browser. Akun, pesanan, stok, dan perubahan demo tersimpan di browser pengunjung; data tidak dibagikan antar perangkat. Panel “Demo interaktif” menyediakan akun admin, akun penjual bila tersedia, dan reset project. Transaksi, booking, serta pesan tidak dikirim ke bisnis sungguhan. Gateway pembayaran eksternal tidak dikonfigurasi; gunakan COD atau transfer demo dan verifikasi admin. Browser modern dengan JavaScript, WebAssembly, dan penyimpanan lokal diperlukan.
 
----
+Source privat menghindari pembukaan repository aplikasi. JavaScript, CSS, gambar, dan sertifikat yang dikirim ke browser tetap dapat diperiksa atau disalin. Tidak ada perlindungan mutlak terhadap penyalinan frontend.
 
-## Featured Projects
+## Sertifikat
 
-### Sistem Pengarsipan Buku Tanah
+- MikroTik Certified Network Associate (MTCNA), No. 2405NA3257, terbit 31 Mei 2024, berlaku tiga tahun.
+- Certified Cybersecurity Educator Professional (CCEP), Red Team Leaders, 6 Januari 2026.
+- Certified Threat Intelligence & Governance Analyst (CTIGA), Red Team Leaders, 6 Januari 2026.
+- Google Cloud Computing Foundations Certificate, Google Cloud, 6 Desember 2024.
 
-A web-based land book archiving system developed during my internship at **ATR/BPN Kabupaten Pangandaran**.
+Dokumen asli ada di `public/certificates/`. Tanggal mengacu pada sertifikat yang diberikan. CV dan portfolio PDF yang sudah ada tetap disertakan.
 
-The system was designed to support data management, archiving, and searching processes in a more structured and efficient way.
+## Jalankan lokal
 
-🔗 **Live Project:**  
-https://arsy-alpha.vercel.app/login
-
----
-
-### Smart Secure QR Code
-
-A web-based Smart QR Code application developed as part of a research project with lecturers at **Universitas Siliwangi**.
-
-The project focuses on the use of QR Code technology with attention to information security and data management.
-
-🔗 **Live Project:**  
-https://smart-secure-qrcode.netlify.app/
-
----
-
-## Technical Skills
-
-### Web Development
-
-- HTML
-- CSS
-- JavaScript
-- React.js
-
-### Programming
-
-- JavaScript
-- Python
-- Node.js
-
-### Cyber Security
-
-- Security Analysis
-- Threat Intelligence
-- Cryptography
-- Information Security
-
-### Development Tools
-
-- Git
-- GitHub
-- VS Code
-- Vite
-
----
-
-## Experience
-
-### Research Assistant
-
-**Universitas Siliwangi**  
-March 2026 — April 2026
-
-Worked on the development, implementation, testing, and documentation of a Smart QR Code research project.
-
-### Cyber Security Analyst
-
-**NOOSC**  
-January 2026 — March 2026
-
-Worked on information security analysis, threat intelligence, and the identification of potential risks and threats in digital systems.
-
-### Web Developer Intern
-
-**ATR/BPN Kabupaten Pangandaran**  
-June 2025 — August 2025
-
-Developed a web-based land book archiving system to support data management and document searching processes.
-
----
-
-## Education
-
-**Bachelor of Informatics**
-
-Universitas Siliwangi  
-2022 — 2026
-
-**GPA:** 3.57 / 4.00
-
----
-
-## Certifications
-
-- **CCEP — Cybersecurity Educator Professional**
-- **CTIGA — Certified Threat Intelligence & Governance Analyst**
-- **Google Cloud Skills Boost**
-
----
-
-## Leadership
-
-### Chairman of Informatics Student Association
-
-**Universitas Siliwangi — 2025**
-
-Led and coordinated organizational programs and activities while developing leadership, teamwork, communication, and problem-solving skills.
-
----
-
-## Tech Stack
-
-This portfolio was built using:
-
-- React.js
-- Vite
-- JavaScript
-- CSS
-- Git
-- GitHub Actions
-- GitHub Pages
-
----
-
-## Run Locally
-
-Clone the repository:
+Gunakan Node.js 22.12+ (atau 24+). Ekstrak ZIP, buka terminal pada folder yang memiliki `package.json`, lalu jalankan:
 
 ```bash
-git clone https://github.com/fauzanalvinmubarok/fauzanalvinmubarok.github.io.git
-```
-
-Enter the project directory:
-
-```bash
-cd fauzanalvinmubarok.github.io
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
+npm ci
 npm run dev
 ```
 
-Build the production version:
+Build produksi:
 
 ```bash
 npm run build
 ```
 
-Preview the production build:
+Metadata project ada di `src/data.js`; tampilan di `src/App.jsx` dan `src/styles.css`. URL demo dapat diganti melalui `VITE_DEMO_BASE_URL` sebelum build (contoh di `.env.example`). Font DM Sans dan Fraunces disediakan lokal beserta lisensinya.
 
-```bash
-npm run preview
-```
+## Memperbarui GitHub Pages
 
----
+Salin isi folder portofolio ini ke checkout repository `fauzanalvinmubarok.github.io`, termasuk `public/`, `src/`, `package.json`, `package-lock.json`, `index.html`, `vite.config.js`, dan workflow di `.github/`. Jalankan `npm ci` dan `npm run build` untuk memeriksa build, lalu commit dan push ke branch `main` repository yang sudah ada. Workflow GitHub Actions akan menerbitkan portofolio.
 
-## Deployment
+Source sembilan project demo tidak perlu diunggah ke repository GitHub Pages. URL demo sudah tertanam dalam data portofolio.
 
-This portfolio is automatically deployed to **GitHub Pages** using **GitHub Actions** whenever changes are pushed to the `main` branch.
+Hosting demo menggunakan Sites dan kuota akun yang tersedia, tanpa membeli hosting atau domain tambahan. Ketersediaan dan kuota mengikuti ketentuan layanan; ini bukan jaminan hosting gratis selamanya.
 
-Live website:
-
-**https://fauzanalvinmubarok.github.io/**
-
----
-
-## Contact
-
-**Fauzan Alvin Mubarok**
-
-- Portfolio: https://fauzanalvinmubarok.github.io/
-- GitHub: https://github.com/fauzanalvinmubarok
-- Email: fauzanalvin5@gmail.com
-
----
+Build produksi dan alur API demo diperiksa secara otomatis. Tampilan di perangkat/browser nyata belum diuji pada sesi ini karena fasilitas browser QA tidak tersedia.
 
 © 2026 Fauzan Alvin Mubarok
